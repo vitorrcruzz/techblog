@@ -1,0 +1,172 @@
+<!--Integrantes do Projeto: -->
+<!--Leonardo Ribeiro Sales, Vitor Cruz, Sabrina França, Vinicio Dominato -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ataques - TechBlog Security</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TechBlog Security</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="firewall.html">Firewalls</a></li>
+                    <li class="nav-item"><a class="nav-link" href="criptografia.html">Criptografia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pentest.html">Pentest</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ataques.html">Ataques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="mb-4">Segurança na Rede: Conheça os Principais Ataques Cibernéticos</h1>
+
+        <p class="lead">A segurança na rede é essencial para proteger dados pessoais, financeiros e empresariais.
+            Conhecer os principais tipos de ataques é o primeiro passo para se defender eficazmente.</p>
+
+        <img src="images/ataques.png" class="img-fluid rounded my-4" style="width: 75%;"
+            alt="Representação de segurança em rede" />
+        <h6 class="text-muted">Fonte da imagem: https://tisec.com.br/o-que-e-phishing/</h6>
+
+        <h2>1. Phishing</h2>
+        <p>O phishing é um ataque em que o invasor se passa por uma entidade confiável, geralmente via e-mail, para
+            enganar o usuário e obter informações sensíveis como senhas ou dados bancários.</p>
+        <ul>
+            <li><strong>Exemplo:</strong> E-mails falsos do banco pedindo atualização de dados.</li>
+            <li><strong>Como evitar:</strong> Sempre verifique remetentes e não clique em links suspeitos.</li>
+        </ul>
+
+        <h2>2. Vishing</h2>
+        <p>Semelhante ao phishing, mas feito via chamadas telefônicas. O atacante tenta enganar a vítima para revelar
+            informações confidenciais.</p>
+        <ul>
+            <li><strong>Exemplo:</strong> Ligações que simulam atendimento bancário.</li>
+            <li><strong>Dica:</strong> Nunca forneça dados pessoais por telefone.</li>
+        </ul>
+
+        <h2>3. Malware</h2>
+        <p>Malware é um termo genérico para qualquer software malicioso, como vírus, worms ou trojans, projetado para
+            danificar ou acessar indevidamente sistemas.</p>
+        <ul>
+            <li><strong>Forma de infecção:</strong> Downloads, anexos de e-mail, sites comprometidos.</li>
+            <li><strong>Prevenção:</strong> Manter antivírus atualizado e evitar instalações de fontes não confiáveis.
+            </li>
+        </ul>
+
+        <h2>4. Spyware</h2>
+        <p>Um tipo de malware que espiona as atividades do usuário sem seu consentimento, coletando informações como
+            histórico de navegação, senhas e dados bancários.</p>
+        <ul>
+            <li><strong>Consequências:</strong> Roubo de identidade, espionagem corporativa.</li>
+            <li><strong>Dica:</strong> Utilize ferramentas de anti-spyware e monitoramento de sistema.</li>
+        </ul>
+
+        <h2>5. Ataque DDoS</h2>
+        <p>Distributed Denial of Service (DDoS) é um ataque que visa sobrecarregar um servidor ou rede, tornando um
+            serviço indisponível para usuários legítimos.</p>
+        <ul>
+            <li><strong>Alvo comum:</strong> Sites de empresas, serviços financeiros, plataformas de jogos.</li>
+            <li><strong>Defesa:</strong> Uso de firewalls, balanceamento de carga e soluções anti-DDoS.</li>
+        </ul>
+
+        <img src="images/ddos-ataque.png" class="img-fluid rounded my-4" style="width: 75%;"
+            alt="Ilustração de ataque DDoS" />
+        <h6>Fonte da imagem: https://blog.guardsi.com.br/o-que-e-ataque-ddos/</h6>
+
+        <section class="mt-5">
+            <h3>Fórum</h3>
+            <p class="text-muted">Você ou sua empresa já foram alvo de algum desses ataques? Compartilhe sua experiência
+                ou tire dúvidas nos comentários abaixo.</p>
+
+            <form id="commentForm" class="mb-3">
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="username" placeholder="Seu nome (opcional)">
+                </div>
+                <div class="mb-2">
+                    <textarea class="form-control" id="commentText" rows="3"
+                        placeholder="Digite seu comentário..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Comentar</button>
+            </form>
+
+            <div id="commentSection" class="border-top pt-3">
+                <!-- Comentários serão adicionados aqui via JS -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Ajuda -->
+                <div class="col-md-4 mb-3">
+                    <h5>Ajuda</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">FAQ</a></li>
+                        <li><a href="contato.html" class="text-decoration-none text-light">Contato</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Suporte Técnico</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5>Inscreva-se na nossa Newsletter</h5>
+                    <form id="newsletterForm">
+                        <div class="mb-2">
+                            <input type="email" id="newsletterEmail" class="form-control" placeholder="Seu e-mail"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Inscrever</button>
+                    </form>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-4 mb-3">
+                    <h5>Redes Sociais</h5>
+                    <a href="https://www.instagram.com" class="text-light me-3" target="_blank"><i
+                            class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.whatsapp.com" class="text-light me-3" target="_blank"><i
+                            class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="https://www.x.com" class="text-light" target="_blank"><i
+                            class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+
+            <hr class="border-light">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+                <div>
+                    <a href="#" class="text-light text-decoration-none me-3">Termos de Uso</a>
+                    <a href="#" class="text-light text-decoration-none">Política de Privacidade</a>
+                </div>
+                <div class="mt-2 mt-md-0">
+                    &copy; <strong>TechBlog Security</strong> 2025 - Todos os direitos reservados.
+                </div>
+            </div>
+
+            <!-- Equipe de desenvolvimento -->
+            <div class="text-center mt-4">
+                <small class="text-secondary">Desenvolvido por Leonardo Sales, Sabrina França, Vitor Cruz e Vinicio
+                    Dominato</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
